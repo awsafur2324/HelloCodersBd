@@ -1951,7 +1951,7 @@ ul {
   margin-top: 8px;
 }
 .cta-text {
-  padding-left: 15px;
+  padding-left: 10px;
   display: inline-block;
 }
 .cta-text h4 {
@@ -2092,6 +2092,29 @@ ul {
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
+}
+.for_mobile{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+  }
+  .single-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-widget-heading h3::before {
+    left: 44%;
+  }
+  .for_mobile{
+    display: block;
+    margin: 30px 0px;
+  }
+  .for_disktop{
+    display: none;
+  }
 }
 
 /* Contact Page */
@@ -2353,7 +2376,6 @@ ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .benefit > div > div > img {
-
   border-radius: 100px;
 }
 .benefit > div > div > h2 {
@@ -2466,7 +2488,7 @@ ul {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
-  padding: 20px 5px ;
+  padding: 20px 5px;
   height: 280px;
 }
 
