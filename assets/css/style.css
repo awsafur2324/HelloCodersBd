@@ -1875,11 +1875,13 @@ Why you chose us Section
   font-size: 0.8 rem;
 }
 .swiper .swiper-wrapper .swiper-slide .team_card .member img {
+  filter: grayscale(0.7);
   transition: all 0.3s ease-in-out;
 }
 .swiper .swiper-wrapper .swiper-slide .team_card .member:hover img {
   transform: scale(1.2);
   transition: transform 1s;
+  filter: grayscale(0);
 }
 .social .icon {
   color: rgb(34, 147, 176);
@@ -2342,6 +2344,7 @@ ul {
   margin: auto;
 }
 .data_holder {
+  text-align: center;
   border-radius: 16px;
   padding: 20px 30px;
   border: 1px solid rgba(128, 128, 128, 0.23);
@@ -2350,17 +2353,18 @@ ul {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .benefit > div > div > img {
+
   border-radius: 100px;
 }
 .benefit > div > div > h2 {
-  text-align: left;
+  text-align: center;
   color: #e92c33;
   font-size: 20px;
   font-weight: 700;
   margin: 15px 0;
 }
 .benefit > div > div > p {
-  text-align: justify;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   min-width: 200px;
@@ -2455,7 +2459,6 @@ ul {
   -o-box-shadow: 0 0 10px #cccccc;
   box-shadow: 0 0 10px #cccccc;
   overflow: hidden;
-  padding: 30px;
   position: relative;
   z-index: 1;
 }
@@ -2463,7 +2466,8 @@ ul {
 .we-offer-area.text-center .item {
   background: #ffffff none repeat scroll 0 0;
   border: medium none;
-  padding: 67px 40px 64px;
+  padding: 20px 5px ;
+  height: 280px;
 }
 
 .we-offer-area.text-center .item i {
