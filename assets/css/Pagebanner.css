@@ -107,7 +107,7 @@
   }
 }
 
-.about_banner h1 {
+.page_banner h1 {
   width: 100%;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -123,7 +123,7 @@
   animation: blinkH1 5s infinite;
 }
 
-.about_banner h1:after {
+.page_banner h1:after {
   width: 100%;
   content: attr(data-text);
   position: absolute;
@@ -136,7 +136,7 @@
   animation: blinkH1After 5s infinite;
 }
 
-.about_banner h1:before {
+.page_banner h1:before {
   width: fit-content;
   content: "";
   position: absolute;
@@ -150,14 +150,14 @@
   animation: blinkH1Before 5s infinite;
 }
 
-.about_banner h1.txt-by {
+.page_banner h1.txt-by {
   z-index: 2;
   font-size: 18px;
   top: calc(50% + 60px);
   text-align: center;
 }
 
-.about_banner h1.txt-ne {
+.page_banner h1.txt-ne {
   top: calc(50%);
   text-align: center;
   line-height: 1;
@@ -165,21 +165,21 @@
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 768px) {
-  .about_banner h1 {
+  .page_banner h1 {
     top: 30%;
     font-size: 30px;
   }
-  .about_banner h1.txt-by {
+  .page_banner h1.txt-by {
     font-size: 12px;
     top: calc(40% + 60px) !important;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .about_banner h1.txt-by {
+  .page_banner h1.txt-by {
     display: none;
   }
-  .about_banner h1 {
+  .page_banner h1 {
     top: 30%;
     font-size: 25px;
   }
