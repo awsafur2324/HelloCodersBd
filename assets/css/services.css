@@ -349,6 +349,12 @@ ul {
 
 .our-engagement {
   width: 100%;
+  padding: 10px;
+  position: relative;
+}
+
+.our-engagement-wrapper {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
@@ -360,11 +366,13 @@ ul {
   position: relative;
 }
 .engagement-card {
+  height: 100%;
   color: #111;
   border-radius: 20px;
   padding: 40px;
   display: flex;
   gap: 25px;
+  justify-content: space-between;
 }
 
 .eng-card-1 {
@@ -398,12 +406,80 @@ ul {
   font-weight: 600;
   margin-bottom: 10px;
 }
+.engagement-card p {
+  text-align: left;
+  max-width: 350px;
+}
+
+.eng-first-letter {
+  width: 75px;
+  height: 75px;
+  font-size: 24px;
+  color: #111;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 16px;
+  background: #00a1c4;
+  border: 10px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+.full-time {
+  background: #97cb3c;
+  top: -25px;
+  left: -25px;
+}
+.custom-plan {
+  background: #0d8e9a;
+  bottom: -25px;
+  left: -25px;
+}
+.project-based {
+  background: #00a1c4;
+  top: -25px;
+  right: -25px;
+}
+.lifetime {
+  background: #41c095;
+  bottom: -25px;
+  right: -25px;
+}
+
+.engagement-title-wrapper {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 25px;
+  border-radius: 100%;
+  box-shadow: 1px 1px 12px 0px black;
+}
+.engagement-title-wrapper h2 {
+  color: #111;
+  text-align: center;
+  font-weight: 600;
+}
 
 @media only screen and (max-width: 768px) {
-  .our-engagement {
+  .our-engagement-wrapper {
     grid-template-columns: 1fr;
   }
+  .engagement-title-wrapper {
+    display: none;
+  }
 }
+
 @media only screen and (max-width: 576px) {
   .engagement-card {
     flex-direction: column-reverse !important;
@@ -416,16 +492,4 @@ ul {
   }
 }
 
-.title-first-letter {
-  position: absolute;
-  top: -30px;
-  left: -30px;
-}
-.title-first-letter h2 {
-  background: #97cb3c;
-  padding: 20px;
-  border: 10px solid #fff;
-
-  border-radius: 100%;
-}
 /* Our Engagement end here */
