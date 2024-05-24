@@ -109,7 +109,7 @@
 .button--telesto::before,
 .button--telesto::after {
   content: "";
-  background: #000;
+  background: #00a1c4;
 }
 @keyframes MoveRightInitial {
   to {
