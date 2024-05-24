@@ -54,6 +54,21 @@ if (typed) {
 }
 // HERO TEXTED
 
+// Modal With video 
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('exampleModal');
+  const video = document.getElementById('contentVideo');
+
+  modal.addEventListener('show.bs.modal', function () {
+    video.play();
+  });
+
+  modal.addEventListener('hide.bs.modal', function () {
+    video.pause();
+    video.currentTime = 0; 
+  });
+});
+// Modal with video ends
 
 
 

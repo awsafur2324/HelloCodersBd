@@ -167,6 +167,14 @@ ul {
   .for_mobile {
     display: none;
   }
+  .copyright-area-name{
+    transition: all .3s ease-in-out;
+  }
+  .copyright-area-name:hover{
+    color: #00a1c4 !important;
+    text-decoration: underline;
+    cursor: pointer;
+  }
   @media only screen and (max-width: 768px) {
     .footer-section {
       text-align: center;
