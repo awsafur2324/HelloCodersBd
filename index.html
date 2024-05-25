@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Hello Coders</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/1.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Vendor CSS Files -->
+
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/navbar.css" rel="stylesheet" />
+    <link href="assets/css/footer.css" rel="stylesheet" />
+    <link href="assets/css/lodader.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: eNno - v4.7.0
+  * Template URL: https://bootstrapmade.com/enno-free-simple-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style></style>
+  </head>
+
+  <body onload="loading()">
+    <div class="loder">
+      <div class="loderitem loderitem-1"></div>
+      <div class="loderitem loderitem-2"></div>
+      <div class="loderitem loderitem-3"></div>
+      <div class="loderitem loderitem-4"></div>
+    </div>
+
+    <div id="mainPanel" style="display: none">
+      <!-- ======= Header ======= -->
+      <header id="header" class="fixed-top">
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <h1 class="logo">
+            <a href="index.html">
+              <span style="color: #00a1c4">He</span>//<span
+                style="color: #00a1c4"
+                >o</span
+              >
+              <span class="text-danger">Coders BD</span>
+            </a>
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li>
+                <a
+                  class="nav-link menu_item scrollto active_menu"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <!-- <li><a class="nav-link scrollto" href="courses.html">Course</a></li> -->
+              <li>
+                <a class="nav-link scrollto menu_item" href="services.html"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto menu_item" href="about.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto menu_item" href="carrer.html"
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a class="nav-link scrollto menu_item" href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+          <!-- .navbar -->
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- ====Modal for video -->
+      <style>
+        .maintain {
+          right: 12px;
+          top: 10px;
+          position: absolute;
+        }
+        .popup_edit {
+          padding: 10px;
+          background: #163647;
+        }
+        @media only screen and (max-width: 991px) {
+          .maintain {
+            top: 50px;
+          }
+        }
+      </style>
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <button
+          type="button"
+          class="btn-close maintain"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content popup_edit">
+            <video id="contentVideo" controls>
+              <source src="./assets/video/ContentVideo.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+            >
+              <h1>
+                <span class="typed" data-typed-items="Hello Coders BD"></span>
+              </h1>
+              <h2>Software Smart Solution</h2>
+              <div class="d-flex">
+                <a href="#about" class="btn-get-started scrollto"
+                  >Get Started</a
+                >
+                <div
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  class="btn-watch-video"
+                >
+                  <i class="bi bi-play-circle"></i><span>Watch Video</span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-6 order-1 order-lg-2 hero-img"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
+              <img
+                src="assets/img/hero-img1.png"
+                class="img-fluid animated"
+                alt=""
+              />
+            </div>
+
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <!-- End Hero -->
+
+      <main id="main">
+        <!-- ======= Featured Services Section ======= -->
+
+        <!-- End Featured Services Section -->
+
+        <!-- ======= Clients Section ======= -->
+
+        <!-- start Technology Section -->
+        <section class="clients clients-slider section-bg">
+          <div class="container-fluid">
+            <div class="section-title">
+              <!-- <span>Technology</span> -->
+              <h2>Our Technology</h2>
+              <p>
+                We use various technologies to make your software attractive.
+              </p>
+            </div>
+
+            <div class="clients-slider swiper" style="background-color: white">
+              <div
+                class="swiper-wrapper align-items-center"
+                style="background-color: white"
+              >
+                <div
+                  class="swiper-slide"
+                  style="background-color: white; height: auto"
+                >
+                  <img
+                    src="assets/img/technology/jquery-removebg-preview.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/vue.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/mysql.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/laravel1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/node.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/angular-removebg-preview.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/mongo1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="assets/img/technology/net1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
+        <!-- End Clients Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+          <div class="container" data-aos="fade-up">
+            <div class="section-title">
+              <!-- <span>Technology</span> -->
+              <h2>Our Services</h2>
+            </div>
+
+            <div class="row gy-5">
+              <div
+                class="col-xl-4 col-md-6 equal-height"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/computer-monitor-with-colorful-picture-ferris-wheel_662214-537759.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="/ServiceDetails.html" class="stretched-link">
+                      <h3>Website Development</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      A website can represent your business identity we can
+                      develop it according to the motive of your business.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div
+                class="col-xl-4 col-md-6 equal-height"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/8510431_3938999.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="#" class="stretched-link">
+                      <h3>E-Commerce</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      We can develop an SEO-friendly content management system
+                      to publish your Products, connect with clients, improve
+                      your sells, and so on.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div
+                class="col-xl-4 col-md-6 equal-height"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/2149488756.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="#" class="stretched-link">
+                      <h3>Medical</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      We have readymade medical software solutions as well as
+                      develop the medical solution based on your demand.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div
+                class="col-xl-4 col-md-6 equal-height"
+                data-aos="zoom-in"
+                data-aos-delay="500"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/erp-enterprise-resource-planning-software-modish-business_31965-166958.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="#" class="stretched-link">
+                      <h3>ERP</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      ERP is a business management software. it's help you to
+                      grow your business to next level. we here for build a well
+                      organized and professional ERP software for you.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div
+                class="col-xl-4 col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/design-html-web-design-template-concept_53876-133658.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="#" class="stretched-link">
+                      <h3>Web Designing</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      We design the best eye catching and professional template
+                      for you on your demand .
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+
+              <div
+                class="col-xl-4 col-md-6 equal-height h-75"
+                data-aos="zoom-in"
+                data-aos-delay="700"
+              >
+                <div class="service-item">
+                  <div class="img">
+                    <img
+                      src="assets/img/attachments/woman-shopping-online-internet-marketplace-browsing-uttermost-sale-items_31965-332245.jpg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                  <div class="details">
+                    <a href="#" class="stretched-link">
+                      <h3>Multi Vendor E-Commerce</h3>
+                      <i class="fs-3 fa-sharp fa-solid fa-eye"></i>
+                    </a>
+                    <p>
+                      Multi vendor marketplaces is a great way to manage your
+                      products, vendors, and commissions right from the
+                      dashboard without involving your developer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Service Item -->
+            </div>
+          </div>
+        </section>
+        <!-- End Services Section -->
+
+        <!-- Way you choose us -->
+        <section class="section_holder">
+          <div class="section-title">
+            <!-- <span>Technology</span> -->
+            <h2>Why you choose our solution</h2>
+          </div>
+          <div class="solition_data_holder">
+            <div class="item">
+              <div class="circle-fun"></div>
+              <div class="item_details_holder holder_one">
+                <h2 class="">uI/uX creative design</h2>
+                <p class="text-start">
+                  Our UI/UX Creative Design ensuring your website stands out in a sea of competition. Our designs aren't just beautiful; they're strategically crafted to enhance user experiences and drive results. Partner with us to unlock the full potential of your digital presence.
+                </p>
+              </div>
+              <div class="icon"></div>
+            </div>
+            <div class="item">
+              <div class="circle-fun"></div>
+              <div class="item_details_holder holder_two">
+                <h2 class="">visual graphic design</h2>
+                <p class="text-start">
+                  We breathe life into brands with captivating visuals that leave a lasting impression. From logos to graphics, we're your partners in crafting a visually stunning brand identity that stands out.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="circle-fun"></div>
+              <div class="item_details_holder holder_one">
+                <h2 class="">strategy & digital marketing</h2>
+                <p class="text-start">
+                  We deploy data-driven strategies to amplify your online reach, engage your audience, and achieve measurable results. Partner with us to navigate the digital landscape and elevate your brand's presence.
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="circle-fun"></div>
+              <div class="item_details_holder holder_two">
+                <h2 class="">effective business growth</h2>
+                <p class="text-start">
+                  Empower your business growth with our proven strategies. We analyze, innovate, and execute tailored plans to drive sustainable growth. Partner with us to unlock your business's full potential and achieve lasting success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <!-- End #main -->
+
+      <!-- ======= Footer ======= -->
+      <footer class="footer-section mt-5">
+        <div class="container">
+          <div class="footer-cta pt-3 pb-3">
+            <div class="row">
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-map-marker-alt text-danger"></i>
+                  <div class="cta-text">
+                    <h4>Find us</h4>
+                    <span>Dhamrai,Dhaka 1350</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="fas fa-phone text-danger"></i>
+                  <div class="cta-text">
+                    <h4>Call us</h4>
+                    <span>+880-1307450464</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-30">
+                <div class="single-cta">
+                  <i class="far fa-envelope-open text-danger"></i>
+                  <div class="cta-text">
+                    <h4>Mail us</h4>
+                    <span>hellocoders.info@gmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content pt-3 pb-3">
+            <div class="row">
+              <div class="col-xl-4 col-lg-4 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-logo">
+                    <a
+                      style="
+                        font-size: 42px;
+                        color: #00a1c4;
+                        font-family: 'Lato', sans-serif;
+                      "
+                      href="index.html"
+                      >He<span style="color: #5f687b">//</span>o
+                      <span class="text-danger" style="font-weight: 700"
+                        >Coders BD</span
+                      ></a
+                    >
+                  </div>
+                  <div class="footer-text text-left">
+                    <p class="text-left">
+                      When you have software issues, we are here to help. We are
+                      commited to provide the finest possible solution.
+                    </p>
+                  </div>
+                  <div class="footer-social-icon for_disktop">
+                    <span>Follow us</span>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f facebook-bg"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                    <a href="#"
+                      ><i class="fab fa-google-plus-g google-bg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Useful Links</h3>
+                  </div>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Expert Team</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-social-icon for_mobile">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+              </div>
+              <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                <div class="footer-widget">
+                  <div class="footer-widget-heading">
+                    <h3>Subscribe</h3>
+                  </div>
+                  <div class="footer-text mb-25">
+                    <p>
+                      Don’t miss to subscribe to our new feeds, kindly fill the
+                      form below.
+                    </p>
+                  </div>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input type="text" placeholder="Email Address" />
+                      <button><i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                <div class="copyright-text">
+                  <p>
+                    Copyright &copy; 2024, All Right Reserved
+                    <a class="text-danger copyright-area-name">Hello Coders BD</a>
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                <div class="footer-menu">
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+
+      <a
+        href="#"
+        class="back-to-top d-flex align-items-center justify-content-center"
+        ><i class="bi bi-arrow-up-short"></i
+      ></a>
+    </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // for loading
+      const loading = () => {
+        const myVar = setTimeout(showLoder, 1000);
+      };
+      function showLoder() {
+        document.querySelector(".loder").style.display = "none";
+        document.getElementById("mainPanel").style.display = "block";
+      }
+      // for team
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // slidesPerGroup: 4,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loopFillGroupWithBlank: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      var $videoSrc;
+      $(".btn-play").click(function () {
+        $videoSrc = $(this).data("src");
+      });
+      console.log($videoSrc);
+      $("#videoModal").on("shown.bs.modal", function (e) {
+        $("#video").attr(
+          "src",
+          $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0"
+        );
+      });
+      $("#videoModal").on("hide.bs.modal", function (e) {
+        $("#video").attr("src", $videoSrc);
+      });
+    </script>
+  </body>
+</html>
